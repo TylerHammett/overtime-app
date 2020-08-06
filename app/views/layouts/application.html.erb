@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overtime</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <header>
+                    <%= render 'shared/nav' %>
+                </header>
+                <%= yield %>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
