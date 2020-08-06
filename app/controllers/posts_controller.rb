@@ -3,6 +3,7 @@ class PostsController < ApplicationController
     before_action :set_post, only: [:show]
 
     def index
+      @posts = current_user.posts
     end
 
     def new
