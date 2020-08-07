@@ -1,7 +1,7 @@
 <h1>Create a Post</h1>
 
 <%= form_for @post do |f| %>
-<%= f.date_field :date %>
-<%= f.text_area :rationale %>
-<%= f.submit "Save"%>
+<%= f.date_field :date, class: "form-control mb-3"  %>
+<%= f.text_area :rationale, class: "form-control mb-3" %>
+<%= f.submit "Save", class: "btn btn-primary btn-lg"%>
 <% end %>
